@@ -1,0 +1,12 @@
+version: '3'
+services:
+  whispery:
+    image: danielemaddaluno/whispery:latest
+    volumes:
+      - .:/app
+    working_dir: /app
+    entrypoint: /bin/sh -c
+    command:
+    - |
+      chmod +x /app/run.sh
+      /app/run.sh

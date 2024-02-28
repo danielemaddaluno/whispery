@@ -83,3 +83,4 @@ fabric.properties
 /client_jsf/.settings/
 /client_jsf/.metadata/
 /settings.xml
+/outputs/
