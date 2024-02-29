@@ -4,34 +4,32 @@
 
 ## Prerequisites:
 
-To run with Docker simply install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your operating system.
+*Docker Desktop* must be installed on your system.<br>
+You can install *Docker Desktop* for your specific operating system from this [link](https://www.docker.com/products/docker-desktop/).
 
 ## Setup
-Download the zip clicking this [link](https://github.com/danielemaddaluno/whispery/archive/refs/heads/main.zip).
-<br>
-Unzip it somewhere.
-<br>
-Then follow these steps:
-Put your audios/vides under the `sources` folder.
-So the directory structure should be something like the following structure:
-```
-.
-├── sources
-│   ├── filename1.mp3
-│   └── filename2.mp4
-├── docker-compose.yml
-├── Dockerfile
-├── LINCENSE
-├── README.md
-└── run.sh
-```
+1. Download the zip of this project clicking this [link](https://github.com/danielemaddaluno/whispery/archive/refs/heads/main.zip).
+2. Unzip it somewhere.
+3. Put your audios and/or videos under the `sources` folder.
+4. So the directory structure should look like the following structure:
+   ```
+   .
+   ├── sources
+   │   ├── filename1.mp3
+   │   └── filename2.mp4
+   ├── docker-compose.yml
+   ├── Dockerfile
+   ├── LICENSE
+   ├── README.md
+   ├── run.sh
+   ├── whispery.bat
+   └── whispery.sh
+   ```
 
 ## Run
-### On Docker
-Inside a Windows system you should be able to run it simply double clicking
-on the `whispery.bat` file (if you already have installed `Docker Desktop`).
 
-Otherwise follow these steps:
+### On Docker (Windows and MacOS)
+Follow these steps:
 1. Move with a command line terminal inside the directory containing the project unzipped (see `Setup` section above),
    for example like that:
     ```bash
@@ -41,25 +39,28 @@ Otherwise follow these steps:
     ```bash
     docker-compose up
     ```
-
-The output will be inside of the `outputs` folder.
-
+   
+### On Windows
+Inside a Windows system you should be able to run it simply double clicking
+on the `whispery.bat` file.<br>
+Otherwise you can run the whispery bat from the `Command Prompt`:
+```bash
+whispery.bat
+```
 
 ### On MacOS
-Execute the following command:
+Inside a MacOS you can run the following command from the `Terminal`:
 ```bash
 ./whispery.sh
 ```
 
-### On Windows
-Click on the bat file or execute the following command:
-```bash
-./whispery.bat
-```
+
 
 ## Output
-Here's a brief explanation of what the provided script produces.
-The different file formats provided as output represent various ways of structuring and encoding textual data. Here's a brief explanation of each format:
+All the outputs will be created inside of the `outputs` folder.<br>
+For each of the files passed as inputs, whisper will create 5 output files.<br>
+Let's imagine that we have added a single file called `filename1.mp4` into the `inputs` folder.<br>
+Here are the different files that will be generated inside of the `output` folder:
 
 1. *JSON (filename1.json)*:
 
