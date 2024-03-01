@@ -1,5 +1,8 @@
 # Whispery: whisper made easy to convert audio/video to text
 
+This project seeks to simplify the usage of [openai/whisper](https://github.com/openai/whisper) and [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) to convert audio/video to text,
+providing a standardized procedure that is independent of the operating system being used.
+
 
 ## Prerequisites:
 
@@ -56,7 +59,7 @@ Inside a MacOS you can run the following command from the `Terminal`:
 
 
 ## Output
-All the outputs will be created inside the `outputs` folder.<br>
+After that you run the program, the outputs will be created inside the `outputs` folder.<br>
 For each of the files passed as inputs, whisper will create 5 output files.<br>
 Let's imagine that we have added a single file called `filename1.mp4` into the `inputs` folder.<br>
 Here are the different files that will be generated inside the `output` folder:
