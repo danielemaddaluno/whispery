@@ -10,11 +10,11 @@ You can install *Docker Desktop* for your specific operating system from this [l
 ## Setup
 1. Download the zip of this project clicking this [link](https://github.com/danielemaddaluno/whispery/archive/refs/heads/main.zip).
 2. Unzip it somewhere.
-3. Put your audios and/or videos under the `sources` folder.
+3. Put your audios and/or videos under the `inputs` folder.
 4. So the directory structure should look like the following structure:
    ```
    .
-   ├── sources
+   ├── inputs
    │   ├── filename1.mp3
    │   └── filename2.mp4
    ├── docker-compose.yml
