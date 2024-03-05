@@ -3,13 +3,22 @@
 This project seeks to simplify the usage of [openai/whisper](https://github.com/openai/whisper) and [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) to convert audio/video to text,
 providing a standardized procedure that is independent of the operating system being used.
 
+You can decide whether to use **whispery** through Google Colab (the easier path) or through Docker.
 
-## Prerequisites:
+## 1. Use with Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielemaddaluno/whispery/blob/master/whispery.ipynb)
+
+Click the button to open <ins>**whispery**</ins> Notebook in **Google Colab** and follow instructions inside.
+
+
+## 2. Use with Docker:
+### Prerequisites:
 
 *Docker Desktop* must be installed on your system.<br>
 You can install *Docker Desktop* for your specific operating system from this [link](https://www.docker.com/products/docker-desktop/).
 
-## Setup
+### Setup
 1. Download the zip of this project clicking this [link](https://github.com/danielemaddaluno/whispery/archive/refs/heads/main.zip).
 2. Unzip it somewhere.
 3. <ins>Put your audios and/or videos inside the `inputs` folder.</ins>
@@ -29,9 +38,9 @@ You can install *Docker Desktop* for your specific operating system from this [l
    ```
 
 
-## Run
+### Run
 
-### On Docker (Windows and MacOS)
+#### On Docker (Windows and MacOS)
 Follow these steps:
 1. Move with a command line terminal inside the directory containing the project unzipped (see `Setup` section above),
    for example like that:
@@ -43,7 +52,7 @@ Follow these steps:
     docker-compose up
     ```
 
-### On Windows
+#### On Windows
 Inside a Windows system you should be able to run it simply double clicking
 on the `whispery.bat` file.<br>
 Otherwise you can run the whispery bat from the `Command Prompt`:
@@ -51,14 +60,14 @@ Otherwise you can run the whispery bat from the `Command Prompt`:
 whispery.bat
 ```
 
-### On MacOS
+#### On MacOS
 Inside a MacOS you can run the following command from the `Terminal`:
 ```bash
 ./whispery.sh
 ```
 
 
-## Output
+### Output
 After that you run the program, the outputs will be created inside the `outputs` folder.<br>
 For each of the files passed as inputs, whisper will create 5 output files.<br>
 Let's imagine that we have added a single file called `filename1.mp4` into the `inputs` folder.<br>
