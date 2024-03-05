@@ -1,9 +1,9 @@
-# Whispery: whisper made easy to convert audio/video to text
+# Whispery: whisper made easy, convert audio/video to text
 
 This project seeks to simplify the usage of [openai/whisper](https://github.com/openai/whisper) and [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) to convert audio/video to text,
 providing a standardized procedure that is independent of the operating system being used.
 
-You can decide whether to use **whispery** through Google Colab (the easier path) or through Docker.
+You can decide whether to use **whispery** through Google Colab (highly recommended) or through Docker.
 
 ## 1. Use with Google Colab:
 
